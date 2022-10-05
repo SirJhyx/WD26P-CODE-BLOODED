@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- HTML Forms - creates
+    input and outputs that can a user
+    interact -->
+    <!--Input Element is for active controls-->
+        <h1>Sample Form</h1>
+    <form action="">
+        <!-- it groups and 
+        identifies that a user can 
+        interact with the web page -->
+        <p>  <!--paragraphe-->
+            <label for="fname">First Name
+            </label>
+            <input type="text" id="fname" name="fname">
+        </p>
+
+        <p>
+            <label for="lname">Last Name
+            </label>
+            <input type="text" id="lname" 
+             name="lname">
+        </p>
+
+        <p>
+            <input type="submit" value="Submit">
+            <!--Submit - confirms the values input
+            by the users-->
+            <!--Form handler-->
+            <input type="reset" value="Clear">
+            <!--Reset - removes the information
+            provided by the user inside the 
+            form-->
+        </p>
+    </form>
+
+    <h1>Survey Form</h1>
+    <form action="">
+        <p>
+            <label for="fname">Fist Name:</label>
+            <input type="text" name="fname" id="fname">
+        </p>
+
+        <p>
+            <label for="lname">Last Name
+            </label>
+            <input type="text" name="lname" 
+             id="lname">
+        </p>
+
+        <p>
+            <label for="emailAdd">Email Address:</label>
+            <input type="email" id="emailAdd" id="emailAdd">
+        </p>
+
+        <p>
+            <input type="radio" name="eType" id="eType">
+            <label for="eType">Onsite</label>
+            <input type="radio" name="eType" id="eType">
+            <label for="eType">Online</label>
+        </p>
+        
+        <p>
+            <label for="bNum">Batch Number
+            </label>
+            <select name="bNmm" id="bNum">
+                <option value="select">Select</option>
+                <option value="b23">Batch 23</option>
+                <option value="b24">Batch 24</option>
+                <option value="b25">Batch 25</option>
+                  
+            </select>
+        </p>
+
+        <p>
+            <label for="instructor">Instructor</label>
+            <input type="text" name="insturctor" id="instructor">
+        </p>
+
+        <p>
+            what do you like about bootcamp?
+        </p>
+
+         <p>
+            <input type="checkbox" name="classroom" id="classroom"
+            value="classroom">
+            <label for="classroom">CLassroom Experience</label>
+
+            <input type="checkbox" name="expertise" id="expertise
+            value="classroom">
+            <label for="classroom">Instructor Expertise</label> 
+
+            <input type="checkbox" name="collaboration" id="collaboration"
+            value="collaboration">
+            <label for="classroom">Cassmates Collaboration</label> <br />
+
+            <input type="checkbox" name="others" id="others"
+            value="others">
+            <label for="others">others</label>
+            <textarea name="others" id="" cols="10" rows="1" 
+            placeholder="plss specify" maxlength="100">
+            </textarea>
+           
+
+        </p>
+
+        <p>
+            <label for="comments">Comments for your
+                instructor</label>
+            <textarea name="comments" id="" cols="30" rows="10" 
+            placeholder="Type full commnets here." maxlength="100">
+            </textarea>
+            <!--placeholder - helps the users to
+            guide them while filling up thier
+            form-->
+
+            <!--maxlength - numbers of characters 
+                to be input-->
+        </p>
+
+        <p>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </p>
+    </form>
+
+</body>
+</html>

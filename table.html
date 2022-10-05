@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <table border="3">
+         
+        <thead><!-- used to group header conten in an html table -->
+          <th>Name:</th>
+          <th>Age:</th>
+          <th>Email:</th>
+        </thead>
+       
+        <tbody><!-- groups the body content in an Html Table -->
+            <tr><!-- Table Row -->
+                <td><!-- Table Data -->
+                    john doe
+                </td>
+                <td>
+                    29
+                </td>
+                <td>
+                    john@email.com
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    jane doe
+                </td>
+                <td>
+                    27
+                </td>
+                <td>
+                    jane@email.com
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p></p>
+
+    <!-- colspan --> <!--merges the unoccupied cell into center-->
+    <!-- defines the number of columns of  the cell shoul span -->
+    <table border="5">
+        <thead>
+            <th colspan="3">Basic Information</th>  <!--table head-->
+            <tr style="font-weight: bold;
+            column-width:10px;">
+                <td>Name</td>
+                <td>Age</td>
+                <td>Email</td>
+            </tr> <!--table row-->
+            <!-- advice: one table row per table data -->
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Jane Doe</td>
+                <td>27</td>
+                <td>Jane@email.com</td>
+            </tr>
+
+            <tr>
+                <td>Jon Doe</td>
+                <td>29</td>
+                <td>John@email.com</td>
+            </tr>
+
+            <tr>
+                <td>Channing Tatum</td>
+                <td>35</td>
+                <td>Channing@email.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- rowspan - number rows a cell should span for more than 1 column -->
+    <!-- syntax: <td rowspan="2"> -->
+        <!-- where as the number is the value that
+        can accomodate the number of rows -->
+            <p></p>
+        <table border="6" cellpadding="20">
+            <tbody>
+                <tr> <!--it covers the full details of the 
+                tables rows-->
+                    <td rowspan="10">
+                        Basic Information Sheet
+                    </td>
+                    <td>Name</td>
+                    <td>Age</td>
+                    <td>Email</td>
+                </tr>
+
+                <tr>
+                    <td>john doe</td>
+                    <td>29</td>
+                    <td>john@email.com</td>
+                </tr>
+
+                <tr>
+                    <td>jane doe</td>
+                    <td>27</td>
+                    <td>jane@email.com</td>
+                </tr>
+
+                <tr>
+                    <td>ChanningTatum</td>
+                    <td>35</td>
+                    <td>CTatum@email.com</td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+</html>
