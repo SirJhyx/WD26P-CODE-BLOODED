@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype Service Request Form</title>
+    <script>
+        function show_alert()
+        {
+            alert("Thanks for submitting your request");
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <h1 style="font-size: strong ;">ABC Company IT Support Request Form</h1>
+        <p style="font-size:25px ;"> <!-- Font-size -alternate way for sizing a "First Name"-->
+            <label for="fname">First Name:</label>
+            <textarea name="fname" id="fname" cols="68" rows="1"></textarea>
+        </p>
+        
+        <p style="font-size:25px ;">
+            <label for="lname">Last Name:</label>
+            <textarea name="lname" id="lname" cols="68" rows="1"></textarea>
+        </p>
+        
+        <p style="font-size:25px ;">
+            <label for="email">Email Addres:</label>
+            <textarea name="email" id="email" cols="64" rows="1"></textarea>
+        </p>
+
+        <p style="font-size:25px ;">
+            <label for="cNumber">Contact Number:</label>
+            <textarea name="cNumber" id="cNumber" cols="60" rows="1"
+            placeholder="Enter Your Complete Phone Number with Extension or Mobile Number"></textarea>
+        </p>
+
+        <p style="font-size:25px ;">
+            <input type="radio" name="eType" id="eType">
+            <label for="eType">Onsite</label>
+
+            <input type="radio" name="eType" id="eType">
+            <label for="eType">Online</label>
+        </p>
+
+        <p style="font-size:20px">
+            <label for="">Location:<br>
+            For Onsite, please state your Workstation NO...Departnet.Floor and Building.<br>
+            For Work from home, please complete your address and inclued a landmark nearest to your location.
+            </label>
+            <textarea name="" id="" cols="110" rows="1"
+            placeholder="Type Here"></textarea>
+        </p>
+
+        <p style="font-size: 20px;">
+            <label for="SRT">Service Request Type:</label> <!--SRT - stands for Service Request Type-->
+            <select name="SRT" id="SRT">
+                <option value="SRT">Select</option>
+                <option value="SRT">Desktop/Laptop Setup</option>
+                <option value="SRT">Desktop/Laptop Support</option>
+                <option value="SRT">Desktop/Laptop Maintenance</option>
+                <option value="SRT">Software Installation</option>
+                <option value="SRT">Software Support</option>
+                <option value="SRT">Computer Peripheral Setup</option>
+                <option value="SRT">Computer Peripheral Troubleshooting</option>
+                <option value="SRT">Computer Maintenance</option>
+            </select>
+        </p>
+
+        <p style="font-size: 20px;">
+            Request Description:
+        </p>
+        <p>
+            <textarea name="" id="" cols="50" rows="10"
+            placeholder="Explain your service request as details as possible"></textarea>
+        </p>
+        <p>
+            Upload Picture ScreenShot for reference 
+            <button type="cFile">Choose File</button>No File Chosen  <!--cFile - stands for Choose File -->
+        </p>
+
+        <p>
+            <button class="submit" onclick="show_alert()">Submit</button>
+            <button class="reset">Reset</button>
+        </p>
+    </form>
+</body>
+</html>
